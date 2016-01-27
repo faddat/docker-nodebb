@@ -6,6 +6,7 @@ nodebb:
   links:
    - redis
    - es
+   
 #uncomment for AWS s3 backups
 #  environment:
 #   - AWS_ACCESS_KEY_ID=CHANGE_ME
@@ -17,6 +18,6 @@ es:
   ports: "9200:9200"
 
 redis:
-  image: redis:3.0.6
+  image: redis:3
   volumes:
    - /pathToRepo/redis/data:/data
